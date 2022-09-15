@@ -10,15 +10,15 @@ clean_existent_dotfiles() {
     if [ -f $VSCODE_USER_HOME/.bashrc ]; then
         rm $VSCODE_USER_HOME/.bashrc
     fi
-    if [ -f$VSCODE_USER_HOME/.profile ]; then
+    if [ -f $VSCODE_USER_HOME/.profile ]; then
         rm $VSCODE_USER_HOME/.profile
     fi
-    if [ -f$VSCODE_USER_HOME/.gitconfig ]; then
+    if [ -f $VSCODE_USER_HOME/.gitconfig ]; then
         rm $VSCODE_USER_HOME/.gitconfig
     fi
 }
 echo "Cleaning existent files"
-clean_existent_dotfiles
+# clean_existent_dotfiles
 
 if [ ! -d $VSCODE_USER_HOME/.dotfiles ]; then
     git clone https://github.com/madalinpopa/dotfiles.git $VSCODE_USER_HOME/.dotfiles
