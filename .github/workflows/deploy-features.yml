@@ -1,4 +1,4 @@
-name: "Release dev container features"
+name: "Release deployment"
 on:
   workflow_dispatch:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
       - name: "Publish"
         uses: devcontainers/action@v1
         with:
