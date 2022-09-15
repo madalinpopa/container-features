@@ -4,25 +4,27 @@ set -e
 echo "Installing dotfiles"
 echo "This runs as $USER"
 
+VSCODE_USER_HOME="/home/vscode"
+
 clean_existent_dotfiles() {
-    if [ -f ~/.bashrc ]; then
-        rm ~/.bashrc
+    if [ -f $VSCODE_USER_HOME/.bashrc ]; then
+        rm $VSCODE_USER_HOME/.bashrc
     fi
-    if [ -f ~/.profile ]; then
-        rm ~/.profile
+    if [ -f$VSCODE_USER_HOME/.profile ]; then
+        rm $VSCODE_USER_HOME/.profile
     fi
-    if [ -f ~/.gitconfig ]; then
-        rm ~/.gitconfig
+    if [ -f$VSCODE_USER_HOME/.gitconfig ]; then
+        rm $VSCODE_USER_HOME/.gitconfig
     fi
 }
 echo "Cleaning existent files"
 clean_existent_dotfiles
 
-if [ ! -d ~/.dotfiles ]; then
-    git clone https://github.com/madalinpopa/dotfiles.git ~/.dotfiles
-    ~/.dotfiles/install
+if [ ! -d $VSCODE_USER_HOME/.dotfiles ]; then
+    git clone https://github.com/madalinpopa/dotfiles.git $VSCODE_USER_HOME/.dotfiles
+    $VSCODE_USER_HOME/.dotfiles/install
 else
-    ~/.dotfiles/install
+    $VSCODE_USER_HOME/.dotfiles/install
 fi
 
 exit 0
