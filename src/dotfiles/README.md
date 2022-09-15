@@ -6,7 +6,7 @@ A feature that I use to install my dotfiles in all my dev containers.
 ```json
 
 "features": {
-    "ghcr.io/madalinpopa/containers-features/dotfiles:latest" : {}
+    "ghcr.io/madalinpopa/container-features/dotfiles:latest" : {}
 }
 
 ```

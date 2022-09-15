@@ -8,6 +8,6 @@ The repository with the dotfiles can be found [here](https://github.com/madalinp
 ```json
 
 "features": {
-    "ghcr.io/madalinpopa/containers-features/dotfiles:latest" : {}
+    "ghcr.io/madalinpopa/container-features/dotfiles:latest" : {}
 }
 ```
