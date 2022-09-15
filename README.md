@@ -4,7 +4,7 @@ development environment with vscode and remote containers.
 
 ## Feature: dotfiles
 This feature installs my dotfiles.
-The repository with the dot files can be found [here](https://github.com/madalinpopa/dotfiles)
+The repository with the dotfiles can be found [here](https://github.com/madalinpopa/dotfiles)
 ```json
 
 "features": {
